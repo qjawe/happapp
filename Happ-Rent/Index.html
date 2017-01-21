@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Happ Rent</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Layout.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+    <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+    <style>
+        .content-section .video-section {
+            max-height: 800px;
+            padding: 110px 0 32px;
+        }
+
+        .video-section .pattern-overlay {
+            background-color: rgba(71, 71, 71, 0.59);
+            padding: 110px 0 32px;
+            min-height: 496px;
+            /* Incase of overlay problems just increase the min-height*/
+        }
+
+        .video-section h1, .video-section h3 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .video-section h1 {
+            font-size: 110px;
+            font-family: 'Buenard', serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 40px auto 0px;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        .video-section h3 {
+            font-size: 25px;
+            font-weight: lighter;
+            margin: 0px auto 15px;
+        }
+
+        .video-section .buttonBar {
+            display: none;
+        }
+
+        .player {
+            font-size: 1px;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $(".player").mb_YTPlayer();
+
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/Index.html" class="navbar-brand">Happ-Rent</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Index.html">Home</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="content-section video-section">
+        <div class="pattern-overlay">
+            <a id="bgndVideo" class="player" data-property="{videoURL:'https:///www.youtube.com/watch?v=fdJc1_IBKJA',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" style="">
+                        <h1>Happ Rent</h1>
+                        <h3>Rent What You Need At a Coporate Level</h3>
+                        <div style="text-align:center">
+                            <span class="btn btn-default" style=""><a href="/About.html">Rent Now</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Printer</h2>
+                <p>
+                </p>
+                <p><a class="btn btn-default" href="#">Connect with us &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Computer</h2>
+                <p></p>
+                <p><a class="btn btn-default" href="#">Connect with us &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Web Hosting</h2>
+                <p></p>
+                <p><a class="btn btn-default" href="#">Connect with us &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
